@@ -1,3 +1,7 @@
+# to run this application just add a valid api key 
+# just edit the Components/imagegenerator/imagegenerator.jsx and add your valid openapi key and use this app
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
