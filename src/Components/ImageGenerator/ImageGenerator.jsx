@@ -5,8 +5,8 @@ import default_image from '../Assests/default_image.svg';
  const ImageGenerator = () => {
     const [image_url, setImage_url]  = useState("/");
     let inputRef = useRef(null);
-    let api=process.env.OPENAI_KEY;
-    
+    let api=process.env.REACT_APP_OPENAI_KEY;
+    console.log(api);
     const [loading,setLoading] = useState(false);
     const imageGenerator = async () =>{
         if(inputRef.current.value === ""){
@@ -24,9 +24,10 @@ import default_image from '../Assests/default_image.svg';
                     "User-Agent":"Chrome", 
                 },
                 body:JSON.stringify({
+                    "model": "dall-e-3",
                     prompt:`${inputRef.current.value}`,
                     n:1,
-                    size:"512x512",
+                    "size": "1024x1024"
                 }),
             }
             );
