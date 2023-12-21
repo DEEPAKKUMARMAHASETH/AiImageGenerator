@@ -18,8 +18,7 @@ import default_image from '../Assests/default_image.svg';
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",
-                    Authorization:
-                    "Bearer "+api,
+                    Authorization:  `Bearer ${api}`,
                     "User-Agent":"Chrome", 
                 },
                 body:JSON.stringify({
