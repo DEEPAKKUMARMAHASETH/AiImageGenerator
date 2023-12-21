@@ -6,7 +6,6 @@ import default_image from '../Assests/default_image.svg';
     const [image_url, setImage_url]  = useState("/");
     let inputRef = useRef(null);
     let api=process.env.REACT_APP_OPENAI_KEY;
-    console.log(api);
     const [loading,setLoading] = useState(false);
     const imageGenerator = async () =>{
         if(inputRef.current.value === ""){
