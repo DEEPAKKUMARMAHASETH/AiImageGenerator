@@ -5,7 +5,7 @@ import default_image from '../Assests/default_image.svg';
  const ImageGenerator = () => {
     const [image_url, setImage_url]  = useState("/");
     let inputRef = useRef(null);
-    let api="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";
+    let api=process.env.OPENAI_KEY;
     
     const [loading,setLoading] = useState(false);
     const imageGenerator = async () =>{
